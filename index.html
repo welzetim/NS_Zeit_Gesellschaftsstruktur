@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gesellschaft im Nationalsozialismus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 class="main-title">Gesellschaft im Nationalsozialismus</h1>
+  <div class="page-bg">
+    <div class="page-wrapper">
+      <div class="spiral">
+        <div></div><div></div><div></div><div></div><div></div><div></div>
+      </div>
+      <div class="notebook">
+        <div class="scribble-title">Wir dürfen nicht vergessen</div>
+
+        <!-- Startbilder -->
+        <div class="start-images">
+          <div class="img-wrapper">
+            <img src="img/1_samann_spielzeug.png" alt="SA-Spielzeug" />
+          </div>
+          <div class="img-wrapper">
+            <img src="img/3_bdm_babykurs.png" alt="BDM Babykurs" />
+          </div>
+          <div class="img-wrapper">
+            <img src="img/5_frauen_pranger.png" alt="Frau am Pranger" />
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+          <button onclick="openModal('kindheit')">Kindheit</button>
+          <button onclick="openModal('jugend')">Jugend</button>
+          <button onclick="openModal('frauen')">Frauenrolle</button>
+          <button onclick="openModal('freizeit')">Freizeit</button>
+          <button onclick="openModal('ueberwachung')">Überwachung</button>
+          <button onclick="openModal('lebenslauf')">Lebenslauf</button>
+          <button onclick="openModal('fragen')">Fragen</button>
+          <button onclick="openModal('quiz')">Quiz</button>
+        </div>
+        <!-- MODALS -->
+        <!-- Kindheit -->
+        <div id="kindheit" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('kindheit')">✕</button>
+            <h2>Kindheit im Nationalsozialismus</h2>
+            <audio controls src="audio/kindheit.mp3"></audio>
+            <p>Die NS-Erziehung begann bereits im Kindesalter. Spielzeug, Bücher und Erziehung vermittelten früh ideologische Werte.</p>
+            <ul>
+              <li>SA-Spielzeug und ideologisch gefärbte Kinderbücher</li>
+              <li>Indoktrinierung im Kindergarten und Schule</li>
+              <li>Frühe Erziehung zu Gehorsam und Vaterlandsliebe</li>
+            </ul>
+            <div class="img-wrapper">
+              <img src="img/1_samann_spielzeug.png" alt="SA-Mann Spielzeug" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Jugend -->
+        <div id="jugend" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('jugend')">✕</button>
+            <h2>Jugend im Nationalsozialismus</h2>
+            <audio controls src="audio/jugend.mp3"></audio>
+            <p>Die Hitlerjugend und der BDM spielten eine zentrale Rolle bei der Erziehung zur Loyalität gegenüber dem Regime.</p>
+            <ul>
+              <li>Pflichtmitgliedschaft ab 10 Jahren</li>
+              <li>Militärische Ausbildung für Jungen, Erziehung zur Mutterrolle für Mädchen</li>
+              <li>Gruppenzwang und ideologische Schulung</li>
+            </ul>
+            <div class="img-wrapper">
+              <img src="img/2_hitlerjugend_wettkampf.png" alt="Hitlerjugend" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Frauenrolle -->
+        <div id="frauen" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('frauen')">✕</button>
+            <h2>Frauenrolle im Nationalsozialismus</h2>
+            <audio controls src="audio/frauen.mp3"></audio>
+            <p>Die Frau sollte dem nationalsozialistischen Ideal der Mutter und Hausfrau entsprechen.</p>
+            <ul>
+              <li>„Kinder, Küche, Kirche“ als Leitbild</li>
+              <li>BDM-Kurse zur Vorbereitung auf Mutterschaft</li>
+              <li>Frauen, die sich widersetzten, wurden öffentlich diffamiert</li>
+            </ul>
+            <div class="img-wrapper">
+              <img src="img/3_bdm_babykurs.png" alt="BDM Kurs" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Freizeit -->
+        <div id="freizeit" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('freizeit')">✕</button>
+            <h2>Freizeit im NS-Staat</h2>
+            <audio controls src="audio/freizeit.mp3"></audio>
+            <p>Mit dem „Kraft durch Freude“-Programm wurde auch die Freizeit im Sinne der Ideologie gestaltet.</p>
+            <ul>
+              <li>Urlaubsangebote für Arbeiter</li>
+              <li>Kulturveranstaltungen und Sportangebote</li>
+              <li>Verbreitung von NS-Ideologie in der Freizeit</li>
+            </ul>
+            <div class="img-wrapper">
+              <img src="img/4_kdfwagen.png" alt="KdF-Auto" />
+            </div>
+          </div>
+        </div>
+        <!-- Überwachung -->
+        <div id="ueberwachung" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('ueberwachung')">✕</button>
+            <h2>Überwachung im Alltag</h2>
+            <audio controls src="audio/ueberwachung.mp3"></audio>
+            <p>Der Alltag war geprägt von Kontrolle und Überwachung durch Blockwarte und Gestapo.</p>
+            <ul>
+              <li>Nachbarn überwachten sich gegenseitig</li>
+              <li>Blockleiter kontrollierten Straßenzüge</li>
+              <li>Abweichler wurden angezeigt und sanktioniert</li>
+            </ul>
+            <div class="img-wrapper">
+              <img src="img/5_frauen_pranger.png" alt="Frau am Pranger" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Lebenslauf -->
+        <div id="lebenslauf" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('lebenslauf')">✕</button>
+            <h2>Der gleichgeschaltete Lebenslauf</h2>
+            <audio controls src="audio/lebenslauf.mp3"></audio>
+            <p>Der gesamte Lebensweg war von der NS-Ideologie durchdrungen – von Geburt bis zum Tod.</p>
+            <ul>
+              <li>Frühe Erziehung, Jugendorganisationen, Parteieintritt</li>
+              <li>Berufs- und Familienleben im Sinne der Ideologie</li>
+              <li>Totale Kontrolle über alle Lebensphasen</li>
+            </ul>
+            <div class="img-wrapper">
+              <img src="img/7_lebenslauf_schema.png" alt="Lebenslauf-Schema" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Fragen -->
+        <div id="fragen" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('fragen')">✕</button>
+            <h2>Fragen & Antworten</h2>
+            <audio controls src="audio/fragen.mp3"></audio>
+
+            <h3>Seite 121</h3>
+            <p><strong>1a)</strong> HJ, BDM, Jungvolk, NS-Frauenschaft und DAF dienten der ideologischen Erziehung.</p>
+            <p><strong>1b)</strong> Propaganda, Medien, Schulbücher, Pflichtmitgliedschaften und Freizeitkontrolle beeinflussten die Bevölkerung.</p>
+            <p><strong>2)</strong> Die Gesellschaft war durch Organisationen, Kontrolle und Erziehung völlig eingesponnen – wie eine Fliege im Netz.</p>
+
+            <h3>Seite 123</h3>
+            <p><strong>1a)</strong> In M5 sind HJ, BDM, Jungvolk, Jungmädel, NS-Frauenschaft, DAF, SA und SS genannt.</p>
+            <p><strong>1b)</strong> Hitler wollte eine starke, gehorsame Jugend, die keinen Widerspruch kennt und kämpft.</p>
+            <p><strong>2)</strong> Die Karikatur zeigt, wie die NS-Ideologie jeden Aspekt des Lebens vereinheitlicht – bis in den Tod.</p>
+            <p><strong>3)</strong> Frauen sollten Hausfrauen und Mütter sein; wer sich widersetzte, wurde ausgegrenzt oder bloßgestellt.</p>
+            <p><strong>4)</strong> Blockleiter kontrollierten Nachbarn, meldeten alles der Partei und sorgten für ideologische Ordnung.</p>
+            <p><strong>5)</strong> KdF stärkte das Gemeinschaftsgefühl und lenkte Freizeit mit Reisen und Kulturangeboten ideologisch.</p>
+            <p><strong>6)</strong> Wer einmal im System war, wurde lebenslang ideologisch gebunden – Freiheit gab es nicht mehr.</p>
+          </div>
+        </div>
+        <!-- Quiz -->
+        <div id="quiz" class="modal">
+          <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('quiz')">✕</button>
+            <h2>Quiz zur NS-Gesellschaft</h2>
+            <audio controls src="audio/quiz.mp3"></audio>
+            <form id="quiz-form">
+              <p>1. Welche Organisation war für Freizeit zuständig?</p>
+              <label><input type="radio" name="q1" value="0"> HJ</label>
+              <label><input type="radio" name="q1" value="1"> KdF</label>
+
+              <p>2. Wofür stand BDM?</p>
+              <label><input type="radio" name="q2" value="1"> Bund Deutscher Mädel</label>
+              <label><input type="radio" name="q2" value="0"> Block Deutscher Männer</label>
+
+              <p>3. Wer kontrollierte die Nachbarschaft im NS-Staat?</p>
+              <label><input type="radio" name="q3" value="1"> Blockwarte</label>
+              <label><input type="radio" name="q3" value="0"> Tourismusbüros</label>
+
+              <p>4. Ab welchem Alter trat man der Hitlerjugend bei?</p>
+              <label><input type="radio" name="q4" value="1"> Ab 10 Jahren</label>
+              <label><input type="radio" name="q4" value="0"> Ab 16 Jahren</label>
+
+              <p>5. Was war ein Ziel des KdF-Programms?</p>
+              <label><input type="radio" name="q5" value="1"> Ideologische Beeinflussung</label>
+              <label><input type="radio" name="q5" value="0"> Militärische Ausbildung</label>
+
+              <p>6. Welche Aufgabe hatte der BDM?</p>
+              <label><input type="radio" name="q6" value="1"> Erziehung zur Mutterrolle</label>
+              <label><input type="radio" name="q6" value="0"> Ausbildung zur Soldatin</label>
+
+              <p>7. Welche Aussage beschreibt das Frauenbild im NS?</p>
+              <label><input type="radio" name="q7" value="1"> Kinder, Küche, Kirche</label>
+              <label><input type="radio" name="q7" value="0"> Karriere, Gleichstellung</label>
+
+              <p>8. Wie wurden Menschen überwacht?</p>
+              <label><input type="radio" name="q8" value="1"> Durch Gestapo und Blockwarte</label>
+              <label><input type="radio" name="q8" value="0"> Durch Schulnoten</label>
+
+              <p>9. Warum wurde Freizeit organisiert?</p>
+              <label><input type="radio" name="q9" value="1"> Zur Volksgemeinschaft</label>
+              <label><input type="radio" name="q9" value="0"> Für freie Meinung</label>
+
+              <p>10. Wie wurden widersetzliche Frauen behandelt?</p>
+              <label><input type="radio" name="q10" value="1"> Öffentlich bloßgestellt</label>
+              <label><input type="radio" name="q10" value="0"> Urlaub gewährt</label>
+
+              <br><br>
+              <button type="button" onclick="evaluateQuiz()">Auswerten</button>
+            </form>
+            <p id="quiz-result"></p>
+          </div>
+        </div>
+
+        <!-- SCRIPT -->
+    <script>
+  function openModal(id) {
+    // Verstecke alle anderen Modals
+    document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+
+    // Zeige das angeklickte Modal
+    const modal = document.getElementById(id);
+    if (modal) {
+      modal.style.display = 'block';
+    }
+
+    // Verstecke NUR die Startbilder und Tabs, NICHT das ganze Notizbuch
+    document.querySelector('.start-images').style.display = 'none';
+    document.querySelector('.tabs').style.display = 'none';
+  }
+
+  function closeModal(id) {
+    // Schließe das aktuelle Modal
+    const modal = document.getElementById(id);
+    if (modal) {
+      modal.style.display = 'none';
+    }
+
+    // Zeige die Startseite (Tabs und Bilder) wieder
+    document.querySelector('.start-images').style.display = 'flex';
+    document.querySelector('.tabs').style.display = 'flex';
+  }
+
+  function evaluateQuiz() {
+    let score = 0;
+    for (let i = 1; i <= 10; i++) {
+      const val = document.querySelector(`input[name="q${i}"]:checked`);
+      if (val) score += parseInt(val.value);
+    }
+    document.getElementById("quiz-result").innerText = `Du hast ${score} von 10 Punkten erreicht.`;
+  }
+</script>
+
+      </div> <!-- Ende .notebook -->
+    </div> <!-- Ende .page-wrapper -->
+  </div> <!-- Ende .page-bg -->
+</body>
+</html>
