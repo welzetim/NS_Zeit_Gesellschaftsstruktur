@@ -242,17 +242,30 @@
     document.querySelector('.tabs').style.display = 'none';
   }
 
-  function closeModal(id) {
-    // Schließe das aktuelle Modal
-    const modal = document.getElementById(id);
-    if (modal) {
-      modal.style.display = 'none';
-    }
+   function closeModal(id) {
+  const modal = document.getElementById(id);
+  if (modal) {
+    modal.style.display = 'none';
+
+    // 🔇 Audio stoppen beim Schließen
+    const audios = modal.querySelectorAll("audio");
+    audios.forEach(audio => {
+      audio.pause();
+      audio.currentTime = 0;
+    });
+  }
+
+  const notebook = document.querySelector('.notebook');
+  if (notebook) {
+    notebook.style.display = 'block';
+  }
+}
+
 
     // Zeige die Startseite (Tabs und Bilder) wieder
     document.querySelector('.start-images').style.display = 'flex';
     document.querySelector('.tabs').style.display = 'flex';
-  }
+  
 
   function evaluateQuiz() {
     let score = 0;
